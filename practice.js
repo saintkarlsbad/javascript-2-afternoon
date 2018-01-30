@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: "Karli",
+  age: 29
+}
+alert(me.name)
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: 'Led Zeppelin',
+  food: 'Masala',
+  person: 'Princess Leia',
+  book: 'Count of Monte Cristo',
+  movie: 'Lord of the Rings',
+  holiday: 'St Patricks Day'
+}
 
 
 /*
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Porsche';
+favoriteThings.brand = 'BandAid';
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +69,12 @@
 */
 
 //Code here
+var backPack = {
 
+};
+var item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'maroon';
 
 
 /*
@@ -64,7 +82,7 @@
 */
 
 //Code here
-
+//alert(backPack);
 
 
 /*
@@ -74,7 +92,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +115,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,7 +128,9 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {
 
+}
 
 
 /*
@@ -118,6 +139,12 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = function () {
+  alert('hello');
+}
+methodCollection.logHello = function () {
+  console.log('hello')
+}
 
 
 
@@ -126,7 +153,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,6 +165,20 @@ var user2 = {
 */
 
 //Code Here
+var person = {
+
+}
+
+function makePerson (name, birthday, ssn) {
+    person.name = name;
+    person.birthday = birthday;
+    person.ssn = ssn;
+    return person;
+  }
+
+  makePerson('Karl', '05/06/88','xxx-xx-xxxx')
+  console.log(person)
+
 
 
 
@@ -148,5 +190,16 @@ var user2 = {
 */
 
 //Code Here
+var creditCard = {
 
+}
 
+function makeCard (cardNumber, expirationDate, securityCode) {
+  creditCard.cardNumber = cardNumber;
+  creditCard.expirationDate = expirationDate;
+  creditCard.securityCode = securityCode;
+  return creditCard;
+}
+
+makeCard('xxxx-xxxx-xxxx-xxxx', '05/55', '888')
+console.log(creditCard)
